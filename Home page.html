@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumNull.com 's Home page</title>
+    <link rel="stylesheet" type="text/css" href="WuTi_beginning.css">
+    <link rel="stylesheet" type="text/css" href="MainPart.css">
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<html>
+<body style="background-color: rgb(228, 224, 224);">
+<!-- 开篇部分 -->
+<div class="clearfix">
+<div class="beginning">
+    <h1>SumNull.<span class="doccom">com</span></h1>
+</div>
+
+</div>
+<hr>
+<div class="welcome">
+    <h1>Welcome To My Page!</h1>
+</div>
+<!-- 主体部分 -->
+<div>
+<div class="Left">
+   
+    <div class="intro">
+    <h2>Intro</h2>
+    <p>我是<span style="font-family: 'Lucida Handwriting'; font-weight: bold;">SumNull</span> ,这里是我的个人站。</p>
+    <p>我是浙江大学的一名普通学生，目前的主修专业为<b>电气工程与自动化</b>。</p>
+    <p>没有什么特定的兴趣爱好，所有一切都正在发掘。</p>
+    <p>决定创立一个个人网站的初衷很简单，就是想有一处地方能够记录在ZJU大于等于四年中学到的、感悟到的、总结出的种种。</p>
+    <p>由于个人经历实在是有限到捉急，本网站的大部分面积有待建设。</p>
+    </div>
+</div>
+
+<div class="Left">
+    <div class="schedule">
+    <h2>Schedule</h2>
+    <p>该板块主要用来记录从大一下开始各个学期的课表，以及寒暑假不涉及具体时间具体任务量的学习目标。我是一个非常懒的人，制定周密的学习计划往往费心费神，我的小心脏承受不了。</p>
+    </div>
+</div>
+
+<div class="Left">
+    <div id="extra" class="intro">
+    <h2>Extra</h2>
+    <p>大学之所以和高中的模式判若云泥，主要是由于大量可支配时间的存在。但我到了大学之后却感觉时间总是不够用，所谓“大量可支配的时间”总是被一些琐碎填满。</p>
+    <p>I cannot let it continue | 自学 自学 疯狂自学</p>
+    <p>该板块主要用来记录课外的所学。这条自学路线主要参考这篇<a href="https://zhuanlan.zhihu.com/p/22266788" style="text-decoration: rgb(41, 159, 228);">机器人工程师学习计划</a>，并融合涉猎的各式CS学习计划，可谓杂得一匹。</p>
+    <p>写技术博客是一众大牛强力推荐的巩固所学技术的好方法。我：如果我也这样做，我会不会成为大牛？</p>
+    <div class="bonus">
+        <h3>也许有一天，会得到答案。</h3>
+    </div>
+    
+    </div>
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    /* 让开头的welcome缓慢出现*/
+    var start = $(".welcome");
+    var text = $(".welcome>h1");
+    start.fadeIn(2000);//得先把div的display设置为none才能fadein！
+    /* 实时显示时间 */
+    // setInterval(current, 1000);
+    // function current() {
+    //     var currenttime = $(".time>p");
+    //     var time = new Data();
+    //     currenttime.innerHTML = time.toLocaleTimeString();
+    // }
+    /* 点击title可弹出弹框 */
+    var title = $(".beginning>h1");
+    title.click(function() {
+        alert("Welcome!");
+    })
+
+    /* Extra部分隐藏的激励 */
+    var extra = $("#extra");
+    var bonus = $("div.bonus");
+    extra.click(function() {
+        console.log("Work?");
+        if (bonus.css("display") == "none")
+            bonus.css("display", "block");
+        else
+            bonus.css("display","none");
+    })
+    
+</script>
+</html>

@@ -1,0 +1,29 @@
+.Left {
+    background-color: whitesmoke;
+    margin: 30px;
+    width: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+.intro {
+    padding: 10px;
+    line-height: 2;
+}
+.intro h2 {
+    border-bottom: 2px solid rgb(214, 47, 47);
+    width: 10%;
+}
+.schedule {
+    padding: 15px;
+    line-height: 2;
+}
+.schedule h2 {
+    border-bottom: 2px solid rgb(214, 47, 47);
+    width: 15%;
+}
+div.bonus {
+    display: none;
+    width: 26%;
+    border-right: 2px solid rgb(41, 92, 231);
+}

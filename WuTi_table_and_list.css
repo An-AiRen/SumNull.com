@@ -1,0 +1,117 @@
+/*This is a CSS for my first page*/
+div.menu {
+	position: sticky;
+}
+ul.menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+			border-spacing: 100;
+			margin-left: 100px;
+			border: 2px solid lightgrey;
+		}
+
+.menu li {float: left;}
+.menu li a {
+		
+			display: inline-block;
+			color:white;
+			padding: 14px 16px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+.menu li a:hover {
+  background-color: #111;
+}
+.menu::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.active {
+  background-color: green;
+}
+
+.t01 {
+			
+			border-collapse: collapse;
+			margin-left: 50px;
+			margin-top: 30px;
+			width: 100%;
+			height: 300px;
+		}
+.th01 {
+			
+			border-collapse: collapse;
+			background-color: grey;
+			text-align: center;
+			color: white;
+			padding: 5px;
+			font-size: 20px;
+			border-top: 2px solid black;
+		}
+.th02 {
+			
+			border-collapse: collapse;
+			background-color: grey;
+			text-align: center;
+			color: white;
+			padding: 5px;
+			font-size: 20px;
+			border-top: 2px solid black;
+		}
+.t01 td {
+			border: 2px solid black;
+			border-collapse: collapse;
+			text-align: left;
+			padding: 10px;
+			font-size: 15px;
+			width: 5px;
+		}
+div.nav {
+			line-height: 15px;
+			background-color: #eeeeee;
+			padding: 5px;
+			height: 100%;
+			width: 150px;
+			margin-left: 100px; 
+			float: left;
+			position: relative;
+			
+		}
+.section {
+			width: 60%;
+			float: left;
+			padding: 10px;
+
+		}
+
+/* For extra part */
+.extra {
+	display: inline-block;
+	float: left;
+}
+.extra-content {
+	display: none;/*you can't see it otherwise put mouse over it*/
+	background-color:white;
+	position: absolute;/*That is important! if position is not defined absolute, the whole nevigation bar will drop down!*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	min-width: 200px;
+	z-index: 1;
+}
+div.extra-content a {
+	color: black;
+	text-align: left;
+	text-decoration: none;
+	padding: 12px 16px;
+	font-size: 14px;
+	display: block;
+}
+.extra .extra-content a:hover{background-color: #eeeeee;}/*不加.extra的话这个link会inherit前面.menu li a的property*/
+.extra:hover .extra-content {
+	display: block;
+}

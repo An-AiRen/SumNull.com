@@ -1,0 +1,44 @@
+/*FOR THE RIGHT OF COLUMN*/
+.Rightside {
+	float: right;
+	border-left: 2px solid rgba(0, 0, 0, 0.5);
+	
+	width: 15%;
+	height: 100%;
+	
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 200px 5px;
+	margin: 30px 30px;
+	
+}
+
+/*THE IMAGE IN RIGHT SIDE OF COLUMN*/
+.insertphoto {
+	
+	width: 100px;
+	height: 100px;
+	opacity: 0.5;
+	padding: 10px;
+	background: #aaaaaa;
+}
+.insertphoto:hover {
+	opacity: 1;
+}
+div.Uppart {
+	width: 100%;
+	height: 30%;
+	display: block;
+	padding: 5px;
+	border-bottom: 2px solid rgb(165, 164, 159);
+	
+}
+div.Lowpart {
+	width: 100%;
+	height: 70%;
+
+	padding: 5px 10px;
+	margin-top: 20px;
+
+}

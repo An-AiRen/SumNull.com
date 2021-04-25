@@ -1,0 +1,46 @@
+/*body {
+	background-image: url("earth.jpg");
+	background-repeat: no-repeat;
+}*/
+.beginning {
+	/*/*about background
+	background-image: url("big sur.jpg");
+	background-attachment:fixed;
+	background-size: auto;
+	background-repeat: no-repeat;*/
+	/*about font*/
+	color: #333333;
+	margin-bottom: 0px;
+	margin-left: 100px;
+	height: 50px;
+	padding-left: 10px;
+	font-family: Lucida Handwriting;
+	border-left: 10px solid rgb(238, 85, 85);
+}
+
+.doccom {
+	color: green;
+	text-shadow: 3px 0px;
+	font-family: Lucida Handwriting;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+div.time {
+	float: right;
+	height: 50px;
+	margin-top: 0px;
+}
+div.welcome {
+	background-color: rgb(112, 107, 107);
+	height: 100px;
+	display: none;
+}
+.welcome h1 {
+	color: white;
+	text-align: center;
+	font-family: Lucida Handwriting;
+	padding: 25px;
+}
